@@ -1,16 +1,16 @@
 import time
-import requests
+import request
 import pandas as pd
 from sqlalchemy import create_engine, text
 
 
-DB_USER = 'postgres'  
-DB_PASSWORD = 'Pipelines'
-DB_HOST = 'localhost' 
-DB_PORT = '5432'
-DB_NAME = 'supplychain_db' 
+DB_USER = ''  
+DB_PASSWORD = ''
+DB_HOST = '' 
+DB_PORT = ''
+DB_NAME = '' 
 
-FRED_API_KEY = 'fa3b25df855c385ed44421b97061f3f4'
+FRED_API_KEY = ''
 
 engine_url = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(engine_url)
