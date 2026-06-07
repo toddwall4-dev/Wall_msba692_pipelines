@@ -6,11 +6,11 @@ from sqlalchemy import create_engine
 
 # --- 1. Database Connectivity ---
 # Connecting to your local Proxmox Docker container
-DB_USER = 'postgres'
-DB_PASSWORD = 'Pipelines'
-DB_HOST = '192.168.68.146' 
-DB_PORT = '5432'
-DB_NAME = 'supplychain_db'
+DB_USER = ''
+DB_PASSWORD = ''
+DB_HOST = '' 
+DB_PORT = ''
+DB_NAME = ''
 
 engine_url = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(engine_url)
