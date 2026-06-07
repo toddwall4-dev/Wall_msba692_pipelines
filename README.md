@@ -41,7 +41,7 @@ This repository includes a Minimum Viable Product (MVP) dashboard built with Plo
 
 **How to Run the Dash App:**
 1. Open your terminal and ensure your PostgreSQL database is running.
-2. Ensure you are in the root project directory (`MSBA 692`).
+2. Ensure you are in the root project directory.
 3. Install dependencies: 
     pip install -r requirements.txt
 4. Execute the application script: 
