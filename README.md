@@ -19,5 +19,31 @@ This project contains a complete, end-to-end data engineering pipeline and web a
 1. Ensure PostgreSQL is running locally or on a reachable server.
 2. Create a target database named `supplychain_db`.
 3. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
+    pip install -r requirements.txt
+4. Open `etl/week3_etl_pipeline.py` and update the Configuration block (Lines 16-20) with your local database credentials (specifically changing `DB_HOST` back to `localhost` or your local IP).
+5. Insert your FRED API key into the `FRED_API_KEY` variable.
+6. Execute the pipeline:
+    python3 etl/week3_etl_pipeline.py
+
+---
+
+## Week 4: Analytics Dashboard (MVP)
+This repository includes a Minimum Viable Product (MVP) dashboard built with Plotly Dash. It connects directly to the PostgreSQL database to visualize the engineered supply chain data.
+
+**Business Insights:**
+* **Macro-Economic Monitoring:** Allows procurement teams to track historical price volatility across critical supply chain sectors (Corrugated Boxes, Steel Mills, and General Freight).
+* **Cost Forecasting:** The annual average aggregation helps identify long-term inflationary trends, enabling more accurate annual budgeting and contract negotiations.
+
+**Features:**
+* **Interactive Filtering:** Users can dynamically toggle between the three commodity indices without restarting the app.
+* **KPI Card:** Displays the most recently available index value for immediate status checks.
+* **Visualizations:** Renders a time-series trend line and an annual average bar chart.
+
+**How to Run the Dash App:**
+1. Open your terminal and ensure your PostgreSQL database is running.
+2. Ensure you are in the root project directory (`MSBA 692`).
+3. Install dependencies: 
+    pip install -r requirements.txt
+4. Execute the application script: 
+    python3 dashboard/app.py
+5. Open a web browser and navigate to `http://127.0.0.1:8050/`.
