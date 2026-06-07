@@ -5,12 +5,11 @@ import plotly.express as px
 from sqlalchemy import create_engine
 
 # --- 1. Database Connectivity ---
-# Connecting to your local Proxmox Docker container
-DB_USER = ''
-DB_PASSWORD = ''
-DB_HOST = '' 
-DB_PORT = ''
-DB_NAME = ''
+DB_USER = 'YOUR_USERNAME_HERE'
+DB_PASSWORD = 'YOUR_PASSWORD_HERE'
+DB_HOST = 'YOUR_HOSTNAME_HERE' 
+DB_PORT = 'YOUR_PORT_HERE'
+DB_NAME = 'YOUR_DB_NAME_HERE'
 
 engine_url = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(engine_url)
