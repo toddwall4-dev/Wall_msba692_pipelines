@@ -56,7 +56,6 @@ Ensure you have PostgreSQL installed and running. Create a target database named
 1. Clone this repository.
 2. Create a `.env` file in the root directory (based on `.env.example`) and fill in your details:
 
-```text
 DB_USER=your_user
 DB_PASSWORD=your_password
 DB_HOST=localhost
