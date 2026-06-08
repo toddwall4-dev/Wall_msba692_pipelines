@@ -5,7 +5,7 @@ This project provides an end-to-end data engineering solution designed to monito
 
 ## System Architecture
 
-Our pipeline follows a standard Extract-Transform-Load (ETL) pattern designed for scalability and data integrity:
+This pipeline follows a standard Extract-Transform-Load (ETL) pattern designed for scalability and data integrity:
 
 - **Extraction:** An incremental load script queries the database for the latest available record, ensuring we only fetch new data from the FRED API.
 - **Transformation & Validation:** Data is standardized, null values are removed, and derived fields (year/month) are generated. A rigorous quality framework ensures no corrupt data enters the system.
